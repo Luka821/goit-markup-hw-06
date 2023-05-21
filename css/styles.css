@@ -451,6 +451,123 @@ img {
   background-size: contain;
 }
 
+.modal-content h2 {
+  padding-top: 40px;
+  padding-bottom: 12px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* Formular Group */
+  .form-group {
+    position: relative;
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .form-group > *:nth-child(1) {
+    color: #757575;
+    font-weight: 400px;
+    font-size: 12px;
+    
+  }
+
+  .form-group + .form-group {
+    margin-top: 10px;
+  }
+
+  .form-group > *:nth-child(2) {
+    outline: 0;
+    padding: 12px 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  }
+
+  .textarea {
+    width: 448px;
+    resize: none;
+    margin-bottom: 20px;
+  }
+
+  .form-checkbox {
+    justify-content: center;
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .form-checkbox > *:nth-child(2) {
+    padding: 0;
+    border: none;
+  }
+
+  .form-checkbox .checkbox {
+    width: 16px;
+    height: 15px;
+    margin-top: 0;
+  }
+
+
+  .textarea::placeholder {
+    color: #75757580;
+  }
+
+  .terms {
+    text-decoration: none;
+  }
+
+  .terms:active,
+  .terms:visited {
+    color: #2196F3;
+  }
+
+  .modal-send {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .btn-submit {
+    border: none;
+    background: #2196F3;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .btn-submit:hover,
+  .btn-submit:focus {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--primary-btn-accent-color--);
+  }
+
+  input[type]:focus {
+    border: 1px solid #2196F3;
+  }
+
+  .textarea:focus {
+    border: 1px solid #2196F3;
+  }
+
+  .form .modal-icon {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+  }
+
+  .form-group .modal-icon:focus {
+    color: #2196F3;
+  }
+  
 /* What we do positions */
   .img-list {
     position: relative;
@@ -474,7 +591,7 @@ img {
     top: 224px;
   }
 
-
+ 
 
 
 /* portfolio.html */
