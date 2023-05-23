@@ -550,10 +550,14 @@ img {
   background-color: var(--primary-btn-accent-color--);
   }
 
-  input[type]:focus {
-    border: 1px solid #2196F3;
+  .input:focus + .modal-icon {
+    color: #2196F3;
   }
 
+  .input:focus-within {
+    border: 1px solid #2196F3;
+  }
+ 
   .textarea:focus {
     border: 1px solid #2196F3;
   }
@@ -564,10 +568,8 @@ img {
     top: 50%;
   }
 
-  .form-group .modal-icon:focus {
-    color: #2196F3;
-  }
-  
+
+
 /* What we do positions */
   .img-list {
     position: relative;
@@ -591,8 +593,8 @@ img {
     top: 224px;
   }
 
- 
-
+/* Footer Subscribe */
+  
 
 /* portfolio.html */
 .btn-list,
