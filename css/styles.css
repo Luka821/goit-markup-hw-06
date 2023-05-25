@@ -442,6 +442,13 @@ img {
   cursor: pointer
 }
 
+.close-btn:hover,
+.close-btn:focus {
+  border-color: #188ce8;
+  transition: var(--transition);
+}
+
+
 .close-btn::before {
   margin: auto;
   content: '';
@@ -556,10 +563,12 @@ img {
 
   .input:focus-within {
     border: 1px solid #2196F3;
+    transition: var(--transition);
   }
  
   .textarea:focus {
     border: 1px solid #2196F3;
+    transition: var(--transition);
   }
 
   .form .modal-icon {
@@ -593,7 +602,80 @@ img {
     top: 224px;
   }
 
+
 /* Footer Subscribe */
+
+  .subscribe {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: flex-start;
+    margin-left: 94px;
+  }
+  
+  .form-footer {
+    display: flex;
+  }
+
+  .label-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  
+
+  .input-footer {
+    width: 358px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  ::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .btn-footer {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    padding-top: 10px;
+    padding-right: 28px;
+    padding-bottom: 10px;
+    padding-left: 43px;
+    margin-top: 37px;
+    width: 200px;
+    height: 50px;
+    background-color: var(--accent-color);
+    border: none;
+    color: var(--primary-white-color);
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .telegram {
+    margin-left: 25px;
+  }
+
+  .btn-footer:hover,
+  .btn-footer:focus {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--primary-btn-accent-color--);
+  }
+
   
 
 /* portfolio.html */
