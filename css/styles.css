@@ -626,7 +626,10 @@ img {
     font-size: 16px;
   }
 
-  
+  .input-footer:focus-within {
+    border-color: #2196F3;
+    transition: var(--transition);
+  }
 
   .input-footer {
     width: 358px;
@@ -638,6 +641,8 @@ img {
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
   }
+
+
 
   ::placeholder {
     color: rgba(255, 255, 255, 0.6);
